@@ -1,0 +1,27 @@
+# VS code files
+*.vscode
+*.code-workspace
+
+# Python cache files
+*__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ROS2 compilation files
+install/
+build/
+log/
+
+**/devel/
+**/logs/
+**/build/
+**/install/
+
+# Temp files
+*.swp
+*.swo
+
+# Environments
+.env/
+venv/
