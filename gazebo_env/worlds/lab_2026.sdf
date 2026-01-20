@@ -75,14 +75,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh.dae</uri>
+              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh.dae</uri>
+              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -138,6 +138,42 @@
         <enable_wind>false</enable_wind>
       </link>
       <pose>0 0 0 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Door'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0.01 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-5.0 -2.61 0 0 0 -1.5</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -394,6 +430,79 @@
         <enable_wind>false</enable_wind>
       </link>
       <pose>1.44 -2.1 0 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <!-- Locker -->
+    <model name='Red_locker'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Red_locker.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Red_locker.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>2.09 -2.2 0 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Tropy_shelf'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-4.75 -0.86 0 0 0 1.5708</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -722,6 +831,150 @@
         <enable_wind>false</enable_wind>
       </link>
       <pose>1.81665 -0.2209 0 -0.002188266931220483 5.445910952162277e-05 0.020981155521267121</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Plastic_drawer'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>2.5 -0.25 0 0 0 3.14159</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+
+   <model name='Fridge'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Fridge_low.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Fridge_low.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>3.77 2.31 0 0 0 3.14159</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Wood_box'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Wood_box.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Wood_box.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-3.1 -0.59 0 0 0 1.5708</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Bike'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Bike.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Bike.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>3.54 -1.46 0.01 -0.07 0 0.14</pose>
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
