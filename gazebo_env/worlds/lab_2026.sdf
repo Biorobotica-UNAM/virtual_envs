@@ -173,7 +173,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-5.0 -2.61 0 0 0 -1.5</pose>
+      <pose>-4.98 -2.52 0.01 0 0 -1.5</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -210,7 +210,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>4.630474 -0.4234 0 0 0 1.5708</pose>
+      <pose>4.630474 -0.75 0.01 0 0 1.5708</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -248,7 +248,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>3.94 -2.25 0 0 0 0</pose>
+      <pose>3.94 -2.25 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -284,7 +284,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>0.44 -2.2567 0 0 0 0</pose>
+      <pose>0.44 -2.2567 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -320,7 +320,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>1.27 2.25 0 0 0 3.14159</pose>
+      <pose>1.27 2.25 0.01 0 0 3.14159</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -356,7 +356,43 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-2.9227 -2.259 0 0 0 0</pose>
+      <pose>-2.9227 -2.259 0.01 0 0 0</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='PC_Desk'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/PC_Desk.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/PC_Desk.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-1.77 -2.37 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -393,7 +429,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>0.0293 -0.1623 0 0 0 0</pose>
+      <pose>0.0293 -0.1623 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -429,7 +465,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>1.44 -2.1 0 0 0 0</pose>
+      <pose>1.44 -2.1 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -466,7 +502,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>2.09 -2.2 0 0 0 0</pose>
+      <pose>2.09 -2.2 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -502,7 +538,43 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-4.75 -0.86 0 0 0 1.5708</pose>
+      <pose>-4.67 -0.65 0.01 0 0 1.5708</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+
+    <model name='Filing_cabinet'>
+      <link name='link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://models/BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>-4.14 -0.65 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -539,7 +611,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>4.64 1.4504 0 0 0 1.5708</pose>
+      <pose>4.64 1.4504 0.01 0 0 1.5708</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -577,7 +649,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>3.95 -2.24 0.75 0 0 0</pose>
+      <pose>3.95 -2.24 0.76 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -613,7 +685,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>2.7 2.31 0 0 0 3.1415</pose>
+      <pose>2.7 2.31 0.01 0 0 3.1415</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -649,7 +721,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-0.24 2.24 0 0 0 0</pose>
+      <pose>-0.24 2.24 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -685,7 +757,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-3.08 0.5 0 0 0 -1.57</pose>
+      <pose>-3.07 0.5 0.01 0 0 -1.57</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -721,7 +793,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-1.92 2.26 0 0 0 0</pose>
+      <pose>-1.92 2.26 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -757,7 +829,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-3.07 2 0 0 0 1.5708</pose>
+      <pose>-3.07 2 0.01 0 0 1.5708</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -793,7 +865,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-0.63 -2.31 0 0 0 0</pose>
+      <pose>-0.63 -2.31 0.01 0 0 0</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -866,7 +938,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>2.5 -0.25 0 0 0 3.14159</pose>
+      <pose>2.5 -0.25 0.01 0 0 3.14159</pose>
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
@@ -902,7 +974,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>3.77 2.31 0 0 0 3.14159</pose>
+      <pose>3.77 2.31 0.01 0 0 3.14159</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -938,7 +1010,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>-3.1 -0.59 0 0 0 1.5708</pose>
+      <pose>-3.02 -0.59 0.01 0 0 1.5708</pose>
       <static>true</static>
       <self_collide>false</self_collide>
     </model>
@@ -974,7 +1046,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>3.54 -1.46 0.01 -0.07 0 0.14</pose>
+      <pose>4.14 -1.79 0.02 0.04 0 0.06</pose>
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
