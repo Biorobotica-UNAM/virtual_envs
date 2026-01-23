@@ -1,19 +1,20 @@
 cmake_minimum_required(VERSION 3.8)
 project(gazebo_env)
 
+# Default to C++17 for ROS 2 Jazzy
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
 # Dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(rclpy REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(ros_gz_sim REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(tf2 REQUIRED)
+
+# Find packages (these are mostly for build dependencies)
+# Remove launch and launch_ros from find_package - they're Python packages
 
 # Linting (optional)
 if(BUILD_TESTING)
@@ -23,20 +24,33 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-# Install directories
-# Launch files
-install(DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}/launch
+# Install world file
+install(FILES worlds/lab_2026.sdf
+  DESTINATION share/${PROJECT_NAME}
 )
 
-# Worlds
-install(DIRECTORY worlds
-  DESTINATION share/${PROJECT_NAME}/worlds
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/
 )
 
-# Models
-install(DIRECTORY models
-  DESTINATION share/${PROJECT_NAME}/models
+# Install model files
+install(DIRECTORY models/
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# If you have config files
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/config")
+  install(DIRECTORY config/
+    DESTINATION share/${PROJECT_NAME}/
+  )
+endif()
+
+# Install Python scripts
+install(PROGRAMS 
+  scripts/generate_urdf.py
+  scripts/publish_joint_states.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 ament_package()

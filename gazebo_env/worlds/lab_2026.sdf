@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version='1.10'>
   <world name='empty'>
-    <physics name='1ms' type='ignored'>
+    <physics name='1ms' type='ode'>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
-    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <!-- <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
     <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
     <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
-    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/> -->
     <gravity>0 0 -9.8000000000000007</gravity>
     <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -75,14 +75,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Lab_Mesh_B.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -111,14 +111,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Floor.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Lab_Floor.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Lab_Floor.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Lab_Floor.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -147,14 +147,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Door.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Door.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Door.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Door.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -184,14 +184,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_01.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_01.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -221,7 +221,7 @@
           <geometry>
             <mesh>
               <scale>1.13 1 1</scale>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_01.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -229,7 +229,7 @@
           <geometry>
             <mesh>
               <scale>1.13 1 1</scale>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_01.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -258,14 +258,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_02.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_02.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -294,14 +294,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_03.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_03.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -330,14 +330,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_04.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_04.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Desk_04.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Desk_04.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -366,14 +366,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/PC_Desk.dae</uri>
+              <uri>./BioRoboticsLab/meshes/PC_Desk.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/PC_Desk.dae</uri>
+              <uri>./BioRoboticsLab/meshes/PC_Desk.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -403,14 +403,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Shelf_1_center.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Shelf_1_center.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Shelf_1_center.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Shelf_1_center.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -439,14 +439,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Shelf_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Shelf_02.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Shelf_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Shelf_02.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -476,14 +476,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Red_locker.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Red_locker.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Red_locker.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Red_locker.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -512,14 +512,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Tropy_shelf.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -548,14 +548,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Filing_cabinet.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -585,14 +585,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_01.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_01.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -622,7 +622,7 @@
           <geometry>
             <mesh>
               <scale>0.85 1 1</scale>
-              <uri>model://models/BioRoboticsLab/meshes/Table_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_01.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -630,7 +630,7 @@
           <geometry>
             <mesh>
               <scale>0.85 1 1</scale>
-              <uri>model://models/BioRoboticsLab/meshes/Table_01.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_01.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -659,14 +659,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_02.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_02.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_02.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -695,14 +695,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_03.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_03.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -731,14 +731,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_03.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_03.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_03.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -767,14 +767,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_04.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_04.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_04.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_04.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -803,14 +803,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_05.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_05.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Table_05.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Table_05.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -839,14 +839,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/White_table.dae</uri>
+              <uri>./BioRoboticsLab/meshes/White_table.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/White_table.dae</uri>
+              <uri>./BioRoboticsLab/meshes/White_table.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -876,14 +876,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/ToolBox_red.dae</uri>
+              <uri>./BioRoboticsLab/meshes/ToolBox_red.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/ToolBox_red.dae</uri>
+              <uri>./BioRoboticsLab/meshes/ToolBox_red.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -912,14 +912,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Plastic_drawer.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -948,14 +948,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Fridge_low.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Fridge_low.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Fridge_low.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Fridge_low.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -984,14 +984,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Wood_box.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Wood_box.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Wood_box.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Wood_box.dae</uri>
             </mesh>
           </geometry>
         </collision>
@@ -1020,14 +1020,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Bike.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Bike.dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://models/BioRoboticsLab/meshes/Bike.dae</uri>
+              <uri>./BioRoboticsLab/meshes/Bike.dae</uri>
             </mesh>
           </geometry>
         </collision>

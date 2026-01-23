@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="use_sim_time" default="true"/>
+  
+  <!-- Package paths -->
+  <let name="gazebo_env_pkg" value="$(find-pkg-share gazebo_env)" />
+  <let name="justina_desc_pkg" value="$(find-pkg-share justina_description)" />
+  
+  <!-- World file -->
+  <let name="world_path" value="$(var gazebo_env_pkg)/lab_2026.sdf" />
+
+  <!-- ========== 1. START GAZEBO ========== -->
+  <executable 
+    cmd="gz sim -v 2 $(var world_path)" 
+    output="screen">
+    <env name="GZ_SIM_RESOURCE_PATH" 
+         value="$(var gazebo_env_pkg):$(var justina_desc_pkg)" />
+  </executable>
+
+  <!-- ========== 2. SPAWN ROBOT ========== -->
+  <timer period="5.0">
+    <executable 
+      cmd="ros2 run ros_gz_sim create -file /tmp/justina_gazebo.urdf -x 0 -y 1 -z 0 -Y 0" 
+      output="screen"/>
+  </timer>
+
+  <!-- ========== 3. BRIDGE: CLOCK (Essential) ========== -->
+  <timer period="6.0">
+    <node 
+      pkg="ros_gz_bridge" 
+      exec="parameter_bridge" 
+      name="clock_bridge" 
+      output="screen"
+      args="/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock">
+      <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+  </timer>
+
+  <!-- ========== 4. BRIDGE: JOINT STATES ========== -->
+  <timer period="7.0">
+    <node 
+      pkg="ros_gz_bridge" 
+      exec="parameter_bridge" 
+      name="joint_state_bridge" 
+      output="screen"
+      args="/world/default/model/justina/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model">
+      <remap from="/world/default/model/justina/joint_state" to="/joint_states"/>
+      <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+  </timer>
+
+  <!-- ========== 5. BRIDGE: POSE (TF) ========== -->
+  <timer period="8.0">
+    <node 
+      pkg="ros_gz_bridge" 
+      exec="parameter_bridge" 
+      name="pose_bridge" 
+      output="screen"
+      args="/model/justina/pose@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V">
+      <remap from="/model/justina/pose" to="/tf"/>
+      <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+  </timer>
+
+  <!-- ========== 6. BRIDGE: COMMAND VELOCITY ========== -->
+  <!-- This bridges ROS /cmd_vel to Gazebo -->
+  <timer period="9.0">
+    <node 
+      pkg="ros_gz_bridge" 
+      exec="parameter_bridge" 
+      name="cmd_vel_bridge" 
+      output="screen"
+      args="/model/justina/cmd_vel@geometry_msgs/msg/Twist[gz.msgs.Twist">
+      <remap from="/model/justina/cmd_vel" to="/cmd_vel"/>
+      <param name="use_sim_time" value="$(var use_sim_time)"/>
+    </node>
+  </timer>
+
+  <!-- ========== 7. ROBOT STATE PUBLISHER ========== -->
+  <timer period="10.0">
+    <node 
+      pkg="robot_state_publisher" 
+      exec="robot_state_publisher" 
+      name="robot_state_publisher" 
+      output="screen">
+      <param name="use_sim_time" value="$(var use_sim_time)"/>
+      <param name="robot_description" 
+             value="$(command 'cat /tmp/justina_gazebo.urdf')"/>
+    </node>
+  </timer>
+
+</launch>
