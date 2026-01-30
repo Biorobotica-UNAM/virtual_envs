@@ -47,10 +47,11 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/config")
 endif()
 
 # Install Python scripts
-install(PROGRAMS 
-  scripts/generate_urdf.py
-  scripts/publish_joint_states.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(PROGRAMS 
+#   scripts/script.py
+
+#   DESTINATION lib/${PROJECT_NAME}
+# )
+
 
 ament_package()
