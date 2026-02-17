@@ -15,7 +15,9 @@ def generate_launch_description():
     # Get package paths
     justina_desc_path = get_package_share_directory('justina_description')
     gazebo_env_pkg = get_package_share_directory('gazebo_env')
-    
+    webots_env_share = get_package_share_directory('webots_env')
+    models_path = os.path.join(webots_env_share, 'models', 'BioRoboticsLab')
+
     # Build the complete resource path for Gazebo
     # This is what makes textures load correctly
     resource_paths = [
@@ -23,6 +25,7 @@ def generate_launch_description():
         justina_desc_path,                          # Our package directory
         os.path.join(justina_desc_path, 'meshes', 'head'),  # Texture directory
         os.path.dirname(justina_desc_path),         # Parent directory
+        models_path,                                # Webots models directory
     ]
     
     # Remove any empty paths and join
@@ -129,7 +132,7 @@ def generate_launch_description():
     )
     
     # ============== SPAWN ROBOT IN GAZEBO ================ #
-    
+
     spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',

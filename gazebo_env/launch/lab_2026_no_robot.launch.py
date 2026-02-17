@@ -20,15 +20,19 @@ def generate_launch_description():
 
     parent_of_share_path = os.path.dirname(robot_description_path)
 
-    # --- Set GZ_SIM_RESOURCE_PATH / GAZEBO_MODEL_PATH ---
+
+    webots_env_share = get_package_share_directory('webots_env')
+    models_path = os.path.join(webots_env_share, 'models', 'BioRoboticsLab')
+
     set_gz_sim_resource_path = SetEnvironmentVariable(
-        name='GZ_SIM_RESOURCE_PATH', 
+        name='GZ_SIM_RESOURCE_PATH',
         value=[
             os.environ.get('GZ_SIM_RESOURCE_PATH', ''),
-            os.path.pathsep, # Separator for paths
-            parent_of_share_path # Add the path containing your package's share directory
+            os.path.pathsep,
+            models_path
         ]
     )
+
 
     # --- Use sim time setup ---
     use_sim_time_declare = DeclareLaunchArgument(

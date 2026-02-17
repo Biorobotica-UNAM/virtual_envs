@@ -23,8 +23,9 @@ find_package(ament_cmake REQUIRED)
 
 
 install(
-  DIRECTORY launch models worlds rviz
+  DIRECTORY launch worlds rviz
   DESTINATION share/${PROJECT_NAME}/
 )
+
 
 ament_package()

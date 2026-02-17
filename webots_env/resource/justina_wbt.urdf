@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="Justina">
+    <webots>
+        <plugin type="justina_driver::JustinaDriver" />
+    </webots>
+</robot>
