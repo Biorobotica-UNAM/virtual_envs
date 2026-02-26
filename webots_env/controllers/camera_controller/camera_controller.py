@@ -49,9 +49,9 @@ keyboard = supervisor.getKeyboard()
 keyboard.enable(time_step)
 
 # --- Robot node ---
-robot_node = supervisor.getFromDef("SupervisorRobot")
+robot_node = supervisor.getFromDef("MainCameraController")
 if robot_node is None:
-    print("ERROR: SupervisorRobot node not found!")
+    print("ERROR: MainCameraController node not found!")
     exit(1)
 
 translation_field = robot_node.getField("translation")

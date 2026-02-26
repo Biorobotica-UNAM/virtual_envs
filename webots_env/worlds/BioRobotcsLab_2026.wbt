@@ -27,14 +27,14 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Plastic_drawer.dae"
+                "../models/BioRoboticsLab/meshes/Plastic_drawer.dae"
               ]
             }
           ]
           name "Plastic_drawer"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Plastic_drawer_Collider.dae"
+              "../models/BioRoboticsLab/meshes/Plastic_drawer_Collider.dae"
             ]
           }
         }
@@ -44,14 +44,14 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/ToolBox_red.dae"
+                "../models/BioRoboticsLab/meshes/ToolBox_red.dae"
               ]
             }
           ]
           name "ToolBox_red"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/ToolBox_red.dae"
+              "../models/BioRoboticsLab/meshes/ToolBox_red.dae"
             ]
           }
         }
@@ -64,7 +64,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Fridge_low.dae"
+                "../models/BioRoboticsLab/meshes/Fridge_low.dae"
               ]
               isPickable FALSE
             }
@@ -72,7 +72,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Fridge"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Fridge_low.dae"
+              "../models/BioRoboticsLab/meshes/Fridge_low.dae"
             ]
           }
           locked TRUE
@@ -83,7 +83,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Wood_box.dae"
+                "../models/BioRoboticsLab/meshes/Wood_box.dae"
               ]
               isPickable FALSE
             }
@@ -91,7 +91,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Wood_box"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Wood_box.dae"
+              "../models/BioRoboticsLab/meshes/Wood_box.dae"
             ]
           }
           locked TRUE
@@ -101,7 +101,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Filing_cabinet.dae"
+                "../models/BioRoboticsLab/meshes/Filing_cabinet.dae"
               ]
               isPickable FALSE
             }
@@ -109,7 +109,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Filing_cabinete"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Filing_cabinet.dae"
+              "../models/BioRoboticsLab/meshes/Filing_cabinet.dae"
             ]
           }
           locked TRUE
@@ -120,7 +120,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Tropy_shelf.dae"
+                "../models/BioRoboticsLab/meshes/Tropy_shelf.dae"
               ]
               isPickable FALSE
             }
@@ -128,7 +128,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "tropy_shelf"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Tropy_shelf.dae"
+              "../models/BioRoboticsLab/meshes/Tropy_shelf.dae"
             ]
           }
           locked TRUE
@@ -138,7 +138,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/White_table.dae"
+                "../models/BioRoboticsLab/meshes/White_table.dae"
               ]
               isPickable FALSE
             }
@@ -146,7 +146,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "White_table"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/White_table.dae"
+              "../models/BioRoboticsLab/meshes/White_table.dae"
             ]
           }
           locked TRUE
@@ -156,7 +156,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/PC_Desk.dae"
+                "../models/BioRoboticsLab/meshes/PC_Desk.dae"
               ]
               isPickable FALSE
             }
@@ -164,7 +164,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "PC_Desk"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/PC_Desk.dae"
+              "../models/BioRoboticsLab/meshes/PC_Desk.dae"
             ]
           }
           locked TRUE
@@ -174,7 +174,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Desk_04.dae"
+                "../models/BioRoboticsLab/meshes/Desk_04.dae"
               ]
               isPickable FALSE
             }
@@ -182,7 +182,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Desk_04"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Desk_04.dae"
+              "../models/BioRoboticsLab/meshes/Desk_04.dae"
             ]
           }
           locked TRUE
@@ -193,7 +193,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Desk_03.dae"
+                "../models/BioRoboticsLab/meshes/Desk_03.dae"
               ]
               isPickable FALSE
             }
@@ -201,7 +201,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Desk_03"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Desk_03.dae"
+              "../models/BioRoboticsLab/meshes/Desk_03.dae"
             ]
           }
           locked TRUE
@@ -211,7 +211,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Desk_02.dae"
+                "../models/BioRoboticsLab/meshes/Desk_02.dae"
               ]
               isPickable FALSE
             }
@@ -219,7 +219,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Desk_02"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Desk_02.dae"
+              "../models/BioRoboticsLab/meshes/Desk_02.dae"
             ]
           }
           locked TRUE
@@ -229,7 +229,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Desk_01_wide.dae"
+                "../models/BioRoboticsLab/meshes/Desk_01_wide.dae"
               ]
               isPickable FALSE
             }
@@ -237,7 +237,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Desk_01_wide"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Desk_01_wide.dae"
+              "../models/BioRoboticsLab/meshes/Desk_01_wide.dae"
             ]
           }
           locked TRUE
@@ -248,7 +248,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Desk_01.dae"
+                "../models/BioRoboticsLab/meshes/Desk_01.dae"
               ]
               isPickable FALSE
             }
@@ -256,7 +256,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Desk_01"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Desk_01.dae"
+              "../models/BioRoboticsLab/meshes/Desk_01.dae"
             ]
           }
           locked TRUE
@@ -267,7 +267,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_05.dae"
+                "../models/BioRoboticsLab/meshes/Table_05.dae"
               ]
               isPickable FALSE
             }
@@ -275,7 +275,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_05"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_05.dae"
+              "../models/BioRoboticsLab/meshes/Table_05.dae"
             ]
           }
           locked TRUE
@@ -285,7 +285,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_04.dae"
+                "../models/BioRoboticsLab/meshes/Table_04.dae"
               ]
               isPickable FALSE
             }
@@ -293,7 +293,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_04"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_04.dae"
+              "../models/BioRoboticsLab/meshes/Table_04.dae"
             ]
           }
           locked TRUE
@@ -304,7 +304,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_03.dae"
+                "../models/BioRoboticsLab/meshes/Table_03.dae"
               ]
               isPickable FALSE
             }
@@ -312,7 +312,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_03_1"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_03.dae"
+              "../models/BioRoboticsLab/meshes/Table_03.dae"
             ]
           }
           locked TRUE
@@ -322,7 +322,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_03.dae"
+                "../models/BioRoboticsLab/meshes/Table_03.dae"
               ]
               isPickable FALSE
             }
@@ -330,7 +330,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_03"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_03.dae"
+              "../models/BioRoboticsLab/meshes/Table_03.dae"
             ]
           }
           locked TRUE
@@ -341,7 +341,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_02.dae"
+                "../models/BioRoboticsLab/meshes/Table_02.dae"
               ]
               isPickable FALSE
             }
@@ -349,7 +349,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_02"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_02.dae"
+              "../models/BioRoboticsLab/meshes/Table_02.dae"
             ]
           }
           locked TRUE
@@ -359,7 +359,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_01_tight.dae"
+                "../models/BioRoboticsLab/meshes/Table_01_tight.dae"
               ]
               isPickable FALSE
             }
@@ -367,7 +367,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_01_1"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_01_tight.dae"
+              "../models/BioRoboticsLab/meshes/Table_01_tight.dae"
             ]
           }
           locked TRUE
@@ -378,7 +378,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Table_01.dae"
+                "../models/BioRoboticsLab/meshes/Table_01.dae"
               ]
               isPickable FALSE
             }
@@ -386,7 +386,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Table_01"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Table_01.dae"
+              "../models/BioRoboticsLab/meshes/Table_01.dae"
             ]
           }
           locked TRUE
@@ -396,7 +396,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Shelf_1_center.dae"
+                "../models/BioRoboticsLab/meshes/Shelf_1_center.dae"
               ]
               isPickable FALSE
             }
@@ -404,7 +404,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Sehlf_1_center"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Shelf_1_center.dae"
+              "../models/BioRoboticsLab/meshes/Shelf_1_center.dae"
             ]
           }
           locked TRUE
@@ -414,7 +414,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Shelf_02.dae"
+                "../models/BioRoboticsLab/meshes/Shelf_02.dae"
               ]
               isPickable FALSE
             }
@@ -422,7 +422,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Shelf_02"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Shelf_02.dae"
+              "../models/BioRoboticsLab/meshes/Shelf_02.dae"
             ]
           }
           locked TRUE
@@ -432,7 +432,7 @@ DEF BioRoboticsLab_Mesh Group {
           children [
             CadShape {
               url [
-                "../../../models/BioRoboticsLab/meshes/Red_locker.dae"
+                "../models/BioRoboticsLab/meshes/Red_locker.dae"
               ]
               isPickable FALSE
             }
@@ -440,7 +440,7 @@ DEF BioRoboticsLab_Mesh Group {
           name "Red_locker"
           boundingObject Mesh {
             url [
-              "../../../models/BioRoboticsLab/meshes/Red_locker.dae"
+              "../models/BioRoboticsLab/meshes/Red_locker.dae"
             ]
           }
           locked TRUE
@@ -453,14 +453,14 @@ DEF BioRoboticsLab_Mesh Group {
       children [
         CadShape {
           url [
-            "../../../models/BioRoboticsLab/meshes/Door.dae"
+            "../models/BioRoboticsLab/meshes/Door.dae"
           ]
         }
       ]
       name "LabDoor"
       boundingObject Mesh {
         url [
-          "../../../models/BioRoboticsLab/meshes/Door.dae"
+          "../models/BioRoboticsLab/meshes/Door.dae"
         ]
       }
     }
@@ -489,7 +489,7 @@ DEF BioRoboticsLab_Mesh Group {
       children [
         CadShape {
           url [
-            "../../../models/BioRoboticsLab/meshes/Lab_Floor.dae"
+            "../models/BioRoboticsLab/meshes/Lab_Floor.dae"
           ]
           isPickable FALSE
         }
@@ -501,7 +501,7 @@ DEF BioRoboticsLab_Mesh Group {
       children [
         CadShape {
           url [
-            "../../../models/BioRoboticsLab/meshes/Lab_Mesh_B.dae"
+            "../models/BioRoboticsLab/meshes/Lab_Mesh_B.dae"
           ]
           isPickable FALSE
         }
@@ -509,15 +509,15 @@ DEF BioRoboticsLab_Mesh Group {
       name "lab_walls"
       boundingObject Mesh {
         url [
-          "../../../models/BioRoboticsLab/meshes/Lab_Mesh_B.dae"
+          "../models/BioRoboticsLab/meshes/Lab_Mesh_B.dae"
         ]
       }
       locked TRUE
     }
   ]
 }
-DEF SupervisorRobot Robot {
-  controller "supervisor_controller"
+DEF MainCameraController Robot {
+  controller "camera_controller"
   supervisor TRUE
   translation 0 1.5 1.6
   rotation 0 0 1 0

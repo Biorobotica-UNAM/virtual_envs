@@ -1,0 +1,19 @@
+#VRML_SIM R2025a utf8
+PROTO Justina [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 1 0 0
+] {
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    name "justina"
+    controller "<extern>"
+
+    children [
+      EXTERNPROTO "URDF.proto"
+      URDF {
+        url "package://webots_env/resource/justina_full.urdf"
+      }
+    ]
+  }
+}

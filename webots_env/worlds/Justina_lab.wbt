@@ -6,11 +6,10 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 DEF MAIN_VIEW Viewpoint {
-  orientation -0.28793368251462453 -0.10726636909155839 0.9516239386099326 3.8010333889686825
-  position 10.385033599855582 7.5216172174602285 9.037724849860581
+  orientation -0.13260086749540642 -0.006782844275289961 0.9911463075464706 3.195111397184371
+  position 3.6439840715114333 1.2050590525187876 1.2324298718559188
   follow "lab_walls"
 }
-
 TexturedBackground {
   texture "noon_building_overcast"
 }
@@ -495,6 +494,9 @@ DEF BioRoboticsLab_Mesh Group {
         }
       ]
       name "lab_floor"
+      boundingObject Plane {
+        size 10.15 5.5
+      }
       locked TRUE
     }
     Solid {
@@ -516,7 +518,3 @@ DEF BioRoboticsLab_Mesh Group {
     }
   ]
 }
-
-
-
-

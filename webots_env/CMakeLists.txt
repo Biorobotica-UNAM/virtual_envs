@@ -49,6 +49,18 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}/
 )
 
+# Install the controllers directory
+install(
+  DIRECTORY controllers/
+  DESTINATION share/${PROJECT_NAME}/controllers
+  USE_SOURCE_PERMISSIONS   # preserves executable bits if set in source
+)
+
+# Install PROTO files
+install(DIRECTORY protos
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}
+)
+
 ament_export_include_directories(
   include
 )
