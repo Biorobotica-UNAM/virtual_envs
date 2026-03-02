@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="Car" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Include the Webots driver macros -->
+  <xacro:include filename="$(find webots_ros2_driver)/urdf/webots_driver.urdf.xacro"/>
+
+  <!-- Base link (robot body) -->
+  <link name="base_link"/>
+
+  <webots>
+    <!-- Map each motor to a ROS topic (optional, but safe) -->
+    <device reference="motor_BR" type="RotationalMotor">
+      <ros><topicName>/cmd_vel</topicName></ros>
+    </device>
+    <device reference="motor_FR" type="RotationalMotor">
+      <ros><topicName>/cmd_vel</topicName></ros>
+    </device>
+    <device reference="motor_BL" type="RotationalMotor">
+      <ros><topicName>/cmd_vel</topicName></ros>
+    </device>
+    <device reference="motor_FL" type="RotationalMotor">
+      <ros><topicName>/cmd_vel</topicName></ros>
+    </device>
+
+    <!-- Differential drive plugin -->
+    <plugin type="diffdrive">
+      <!-- Use the DEF names you gave to the HingeJoints -->
+      <leftJoint>wheel_BL_joint wheel_FL_joint</leftJoint>
+      <rightJoint>wheel_BR_joint wheel_FR_joint</rightJoint>
+      <wheelDistance>0.13</wheelDistance>
+      <wheelRadius>0.05</wheelRadius>
+      <odometryTopic>/odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
+  </webots>
+</robot>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<robot name="CarProto">
+  <!-- Links and joints exported from Webots (do not modify) -->
+  <link name="base_link">
+  </link>
+  <joint name="motor_FL" type="continuous">
+    <parent link="base_link"/>
+    <child link="weel_FL_link"/>
+    <axis xyz="0 -0.000003 -1"/>
+    <limit effort="16" velocity="3"/>
+    <origin xyz="0.07 0.065 0.05" rpy="1.5708 0 0"/>
+  </joint>
+  <link name="weel_FL_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="motor_BL" type="continuous">
+    <parent link="base_link"/>
+    <child link="weel_BL_link"/>
+    <axis xyz="0 -0.000003 -1"/>
+    <limit effort="16" velocity="3"/>
+    <origin xyz="-0.07 0.065 0.05" rpy="1.5708 0 0"/>
+  </joint>
+  <link name="weel_BL_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="motor_FR" type="continuous">
+    <parent link="base_link"/>
+    <child link="weel_FR_link"/>
+    <axis xyz="0 -0.000004 -1"/>
+    <limit effort="16" velocity="3"/>
+    <origin xyz="0.07 -0.065 0.05" rpy="1.5708 0 0"/>
+  </joint>
+  <link name="weel_FR_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="motor_BR" type="continuous">
+    <parent link="base_link"/>
+    <child link="weel_BR_link"/>
+    <axis xyz="0 -0.000004 -1"/>
+    <limit effort="16" velocity="3"/>
+    <origin xyz="-0.07 -0.065 0.05" rpy="1.5708 0 0"/>
+  </joint>
+  <link name="weel_BR_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Webots plugin: differential drive controller -->
+  <webots>
+    <plugin type="diffdrive">
+      <!-- Use the motor/joint names exactly as they appear above -->
+      <leftJoint>motor_BL motor_FL</leftJoint>
+      <rightJoint>motor_BR motor_FR</rightJoint>
+      <wheelDistance>0.13</wheelDistance>   <!-- track width in meters -->
+      <wheelRadius>0.05</wheelRadius>       <!-- wheel radius in meters -->
+      <odometryTopic>/odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
+  </webots>
+</robot>

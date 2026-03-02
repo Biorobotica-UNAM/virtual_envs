@@ -1,0 +1,187 @@
+#VRML_SIM R2025a utf8
+# Test PROTO file.
+
+
+PROTO CarProto [
+  field SFString name "robot"
+  field SFString contactMaterial "default"
+  field SFNode boundingObject NULL
+  field SFNode physics NULL
+  field SFBool locked FALSE
+  field SFString controller "<generic>"
+  field MFString controllerArgs [ ]
+  field SFString customData ""
+  field SFBool supervisor FALSE
+  field SFVec3f linearVelocity 0 0 0
+  field SFVec3f angularVelocity 0 0 0
+]
+{
+  Robot {
+    name IS name
+    contactMaterial IS contactMaterial
+    boundingObject IS boundingObject
+    physics IS physics
+    locked IS locked
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    linearVelocity IS linearVelocity
+    angularVelocity IS angularVelocity
+    translation 0 1 0
+    children [
+      Group {
+        children [
+          DEF weel_BR_joint HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor -0.07 -0.065 0.05
+            }
+            device [
+              DEF motor_BR_sensor PositionSensor {
+                name "motor_BR"
+              }
+              DEF motor_BR RotationalMotor {
+                name "motor_BR"
+                maxVelocity 3
+                maxTorque 16
+              }
+            ]
+            endPoint DEF weel_BR_link Solid {
+              translation -0.07 -0.065 0.05
+              rotation 1 0 0 1.5708003061004252
+              children [
+                DEF llanta Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cylinder {
+                    height 0.03
+                    radius 0.05
+                  }
+                }
+              ]
+              name "weel_BR_link"
+              boundingObject USE llanta
+              physics Physics {
+                density -1
+                mass 0.2
+              }
+            }
+          }
+          DEF weel_FR_joint HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor 0.07 -0.065 0.05
+            }
+            device [
+              DEF motor_FR_sensor PositionSensor {
+              }
+              DEF motor_FR RotationalMotor {
+                name "motor_FR"
+                maxVelocity 3
+                maxTorque 16
+              }
+            ]
+            endPoint DEF weel_FR_link Solid {
+              translation 0.07 -0.065 0.05
+              rotation 1 0 0 1.5708003061004252
+              children [
+                DEF llanta Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cylinder {
+                    height 0.03
+                    radius 0.05
+                  }
+                }
+              ]
+              name "weel_FR_link"
+              boundingObject USE llanta
+              physics Physics {
+                density -1
+                mass 0.2
+              }
+            }
+          }
+          DEF body_link Pose {
+            translation 0 0 0.065
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 0.3 0
+                  roughness 1
+                  metalness 0
+                }
+                geometry Box {
+                  size 0.25 0.1 0.05
+                }
+              }
+            ]
+          }
+          DEF weel_BL_joint HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor -0.07 0.065 0.05
+            }
+            device [
+              DEF motor_BL_sensor PositionSensor {
+              }
+              DEF motor_BL RotationalMotor {
+                name "motor_BL"
+                maxVelocity 3
+                maxTorque 16
+              }
+            ]
+            endPoint DEF weel_BL_link Solid {
+              translation -0.07 0.065 0.05
+              rotation 1 0 0 1.5707996938995745
+              children [
+                USE llanta
+              ]
+              name "weel_BL_link"
+              boundingObject USE llanta
+              physics Physics {
+                density -1
+                mass 0.2
+              }
+            }
+          }
+          DEF weel_FL_joint HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+              anchor 0.07 0.065 0.05
+            }
+            device [
+              DEF motor_FL_sensor PositionSensor {
+                name "motor_FL"
+              }
+              DEF motor_FL RotationalMotor {
+                name "motor_FL"
+                maxVelocity 3
+                maxTorque 16
+              }
+            ]
+            endPoint DEF weel_FL_link Solid {
+              translation 0.07 0.065 0.05
+              rotation 1 0 0 1.5707996938995745
+              children [
+                USE llanta
+              ]
+              name "weel_FL_link"
+              boundingObject USE llanta
+              physics Physics {
+                density -1
+                mass 0.2
+              }
+            }
+          }
+        ]
+      }
+    ]
+    boundingObject USE body_link
+    physics Physics {
+      density -1
+      mass 0.3
+    }
+  }
+}

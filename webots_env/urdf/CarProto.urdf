@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="simple_car">
+  <webots>
+    <plugin type="webots_env.controllers.justina.justina"/>
+  </webots>
+</robot>

@@ -1,0 +1,93 @@
+#VRML_SIM R2025a utf8
+
+PROTO RobotinoBase [
+  field SFVec3f translation 0 1 0.06
+  field SFRotation rotation 0 0 1 0
+  field SFString name "base_link"
+  field SFString controller "justina_controller"
+  field SFBool supervisor FALSE
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    name IS name
+    controller IS controller
+    supervisor IS supervisor
+
+    children [
+
+      # --- LEFT WHEEL ---
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0 1 0
+          anchor 0 0.11 -0.01
+        }
+        device [
+          RotationalMotor {
+            name "left_wheel"
+            maxVelocity 20
+            maxTorque 100
+          }
+        ]
+        endPoint Solid {
+          translation 0 0.11 -0.01
+          rotation 1 0 0 1.5708
+          children [
+            Shape {
+              geometry Cylinder { radius 0.05 height 0.02 }
+            }
+          ]
+          boundingObject Cylinder { radius 0.05 height 0.02 }
+          physics Physics { density -1 mass 0.2 }
+        }
+      }
+
+      # --- RIGHT WHEEL ---
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 0 1 0
+          anchor 0 -0.11 -0.01
+        }
+        device [
+          RotationalMotor {
+            name "right_wheel"
+            maxVelocity 20
+            maxTorque 100
+          }
+        ]
+        endPoint Solid {
+          translation 0 -0.11 -0.01
+          rotation 1 0 0 1.5708
+          children [
+            Shape {
+              geometry Cylinder { radius 0.05 height 0.02 }
+            }
+          ]
+          boundingObject Cylinder { radius 0.05 height 0.02 }
+          physics Physics { density -1 mass 0.2 }
+        }
+      }
+
+      # --- BASE BODY ---
+      Shape {
+        appearance PBRAppearance {
+          baseColor 0.2 0.2 0.8
+        }
+        geometry Box {
+          size 0.3 0.22 0.1
+        }
+      }
+    ]
+
+    # Correct boundingObject (geometry only!)
+    boundingObject Box {
+      size 0.3 0.22 0.1
+    }
+
+    physics Physics {
+      density -1
+      mass 5
+    }
+  }
+}

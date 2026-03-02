@@ -46,6 +46,8 @@ install(DIRECTORY
   resource
   worlds
   models
+  config
+  urdf
   DESTINATION share/${PROJECT_NAME}/
 )
 
@@ -55,6 +57,7 @@ install(
   DESTINATION share/${PROJECT_NAME}/controllers
   USE_SOURCE_PERMISSIONS   # preserves executable bits if set in source
 )
+
 
 # Install PROTO files
 install(DIRECTORY protos

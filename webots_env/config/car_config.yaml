@@ -1,0 +1,12 @@
+driver:
+  ros__parameters:
+    use_sim_time: true
+    cmd_vel_topic: "/cmd_vel"
+    odom_topic: "/odom"
+    wheel_base: 0.13
+    wheel_radius: 0.05
+    left_joint_names: ["motor_BL", "motor_FL"]
+    right_joint_names: ["motor_BR", "motor_FR"]
+    publish_tf: true
+    command_timeout: 0.5
+    robot_name: "robot"
