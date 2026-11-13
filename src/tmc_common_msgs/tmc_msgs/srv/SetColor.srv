@@ -1,0 +1,10 @@
+# color to set
+std_msgs/ColorRGBA color
+
+# If true, this action goal does not overwrite other color control
+bool do_not_overwrite
+---
+# indicate successful run of service
+bool success
+# informational, e.g. for error messages
+string message

@@ -1,0 +1,12 @@
+# The user specifies a number of neighbors which every indices must have
+# within a specified radius to remain in the PointCloud.
+
+# comment (TODO)
+float64 radius_search
+
+# minimum neighbors
+int32 min_neighbors
+
+---
+# result of this service.
+bool result

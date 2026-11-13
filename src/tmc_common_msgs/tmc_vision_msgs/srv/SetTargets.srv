@@ -1,0 +1,5 @@
+# With this srv, you can set target object to be recognized.
+
+# Object ids as recognition target.
+tmc_msgs/ObjectIdentifier[] targets
+---

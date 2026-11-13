@@ -1,0 +1,10 @@
+# Additional state information can be provided here to specify the starting positions 
+# of other joints/links on the robot.
+
+# comment (TODO)
+sensor_msgs/JointState joint_state
+---
+# The returned solution 
+bool collision
+# comment (TODO)
+tmc_manipulation_msgs/ArmManipulationErrorCodes error_code

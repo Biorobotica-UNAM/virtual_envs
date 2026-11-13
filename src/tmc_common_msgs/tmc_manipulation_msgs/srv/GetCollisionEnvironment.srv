@@ -1,0 +1,11 @@
+# Service to get current collision information
+
+# Origin_frame_id
+string origin_frame_id
+
+# True:known object only False: known object and tccm
+bool known_object_only
+
+---
+# The returned solution 
+tmc_manipulation_msgs/CollisionEnvironment environment

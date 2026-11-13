@@ -1,0 +1,6 @@
+# true if you want to start capturing.
+# false if you want to stop capturing.
+bool capture
+---
+# Whether your request succeeded or not.
+bool is_success

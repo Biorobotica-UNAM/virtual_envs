@@ -1,0 +1,4 @@
+tmc_vision_msgs/SubPixel upper_left
+tmc_vision_msgs/SubPixel upper_right
+tmc_vision_msgs/SubPixel lower_left
+tmc_vision_msgs/SubPixel lower_right

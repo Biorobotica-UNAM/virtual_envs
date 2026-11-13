@@ -1,0 +1,15 @@
+# Colors for blinking
+std_msgs/ColorRGBA[] base_colors
+
+# Blinking interval
+builtin_interfaces/Duration blink_interval
+
+# Number of blinking
+uint32 blink_count
+
+# If true, this action goal does not overwrite other color control
+bool do_not_overwrite
+---
+
+---
+uint32 count

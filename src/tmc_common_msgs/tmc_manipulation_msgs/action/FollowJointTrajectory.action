@@ -1,0 +1,48 @@
+# Following joint trajectory with impedance control
+
+# Followed trajectory
+trajectory_msgs/JointTrajectory trajectory
+
+# Feed forward force and torque
+# If frame_id is empty, the system is model coordinate
+# If frame_id is not empty, the system is frame_id's coordinate
+geometry_msgs/WrenchStamped feed_forward_wrench
+
+# Name of preset impedance control parameters
+string preset_parameters_name
+---
+# Error code
+int32 error_code
+# Following action is finished normaly
+int32 SUCCESSFUL = 0
+# Given trajectory or parameter name is invalid
+int32 INVALID_GOAL = -1
+# Given trajectory has invalid joint name
+int32 INVALID_JOINTS = -2
+# Given trajectory is older than current
+int32 OLD_HEADER_TIMESTAMP = -3
+# Following action is finished with path tolerance violation
+int32 PATH_TOLERANCE_VIOLATED = -4
+# Following action is finished with goal tolerance violation
+int32 GOAL_TOLERANCE_VIOLATED = -5
+
+# Human readable description of the error code
+string error_string
+---
+# Header of feedback infromation which include timestamp
+Header header
+# Controlled joints
+string[] joint_names
+# Desired joint state sampled from given trajectory
+trajectory_msgs/JointTrajectoryPoint desired
+# Current joint state
+trajectory_msgs/JointTrajectoryPoint actual
+# Diffrence between desired and actual
+trajectory_msgs/JointTrajectoryPoint error
+
+# Desired pose of target frame
+geometry_msgs/Pose desired_pose
+# Current pose of target frame
+geometry_msgs/Pose actual_pose
+# Diffrence between desired_pose and actual_pose
+geometry_msgs/Pose error_pose

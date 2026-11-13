@@ -1,0 +1,4 @@
+---
+bool enable_function
+std_msgs/String bumper_set
+std_msgs/String[] disable_bumpers

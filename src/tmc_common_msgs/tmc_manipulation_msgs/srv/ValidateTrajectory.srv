@@ -1,0 +1,9 @@
+# Summary(TODO)
+
+# Trajectory of joints
+trajectory_msgs/JointTrajectory trajectory
+---
+# The returned solution
+bool collision
+# comment (TODO)
+tmc_manipulation_msgs/ArmManipulationErrorCodes error_code

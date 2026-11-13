@@ -1,0 +1,11 @@
+# This srv is deprecated. It is recommended not to use this anymore.
+
+# Types of flip you can request.
+uint8 mode
+uint8 RESET = 0
+uint8 VERTICAL = 1
+uint8 HORIZONTAL = 2
+uint8 BOTH = 3
+---
+# Whether your request succeeded or not.
+bool is_sucsess

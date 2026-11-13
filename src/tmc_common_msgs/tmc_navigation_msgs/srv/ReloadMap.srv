@@ -1,0 +1,7 @@
+# Set New map config to grid_map_server
+
+# New map config file name (.yaml)
+string new_map_yaml
+---
+# True if map is reloaded
+bool is_success

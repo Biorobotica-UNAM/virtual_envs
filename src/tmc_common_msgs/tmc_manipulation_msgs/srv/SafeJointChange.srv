@@ -1,0 +1,7 @@
+# Service to change robot pose without collision
+
+# Reference joint state
+sensor_msgs/JointState ref_joint_state
+---
+# True: Success False: Fail
+bool success

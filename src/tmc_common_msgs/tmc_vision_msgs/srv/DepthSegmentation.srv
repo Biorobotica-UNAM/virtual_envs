@@ -1,0 +1,13 @@
+# input depth image
+sensor_msgs/Image depth_image
+
+sensor_msgs/RegionOfInterest roi
+
+# distance for cropping
+uint16 max_distance
+uint16 min_distance
+---
+# output segmented label image
+# each pixel stores a label and the number of labels starts from 0
+# image height and width are the same as roi
+sensor_msgs/Image segmented_label_image

@@ -1,0 +1,11 @@
+# Summary(TODO)
+
+# the setting key of the node which published this service.
+string node_key
+
+# true is paused. false is resumed.
+bool pause
+
+---
+# result of this service.
+bool result

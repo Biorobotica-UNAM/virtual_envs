@@ -1,0 +1,8 @@
+# Summary(TODO)
+
+# the setting key of the node which published this service.
+string node_key
+
+---
+# result of this service.
+bool result

@@ -1,0 +1,3 @@
+std_msgs/String odom_type
+---
+bool is_success

@@ -1,0 +1,7 @@
+# Summary(TODO)
+
+# comment (TODO)
+string hand_module_name # This is defined by trml
+---
+# comment (TODO)
+tmc_manipulation_msgs/GraspState result

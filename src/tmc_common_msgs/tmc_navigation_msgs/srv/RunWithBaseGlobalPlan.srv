@@ -1,0 +1,13 @@
+# Summary(TODO)
+
+# the setting key of the node which published this service.
+string node_key
+
+# setting goal
+geometry_msgs/Pose goal_pose
+
+# direction
+bool is_forward
+---
+# result of this service.
+bool result

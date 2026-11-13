@@ -1,0 +1,35 @@
+<package format="3">
+  <name>hsrb_gripper_controller</name>
+  <version>2.4.0</version>
+  <description>The gripper controller for HSR-hsrb</description>
+
+  <maintainer email="xr-hsr-support@mail.toyota.co.jp">HSR Support</maintainer>
+  <license>BSD 3-clause Clear License</license>
+  <author email="kiyohiro_sogen@mail.toyota.co.jp">Kiyohiro Sogen</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>lifecycle_msgs</depend>
+  <depend>control_msgs</depend>
+  <depend>controller_interface</depend>
+  <depend>hardware_interface</depend>
+  <depend>joint_trajectory_controller</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>std_msgs</depend>
+  <depend>tmc_control_msgs</depend>
+  <depend>tmc_exxx_servo_motor_protocol</depend>
+  <depend>tmc_utils</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>urdf</depend>
+  <depend>yaml-cpp</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_cmake_gmock</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

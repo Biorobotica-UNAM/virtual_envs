@@ -1,0 +1,8 @@
+tmc_planning_msgs/Constraints constraints
+moveit_msgs/RobotState initial_state
+float64 normalized_velocity
+bool enable_base
+---
+moveit_msgs/RobotTrajectory[] robot_trajectories
+---
+

@@ -1,0 +1,19 @@
+# Summary(TODO)
+
+# always move in direction of arm.
+int32 DIRECTION_OF_ARM = 0
+
+# follower node uniquely determines move direction. 
+int32 AUTO_DIRECTION = 1
+
+# always move in oppisite direciton of arm. 
+int32 OPPOSITE_DIRECTION_OF_ARM = 2
+
+# move in direction determined by local parameter of follower. 
+int32 DEFAULT_DIRECTION = 3
+
+# mode select parameter. moving direciton of base change depending on mode
+int32 moving_direction_mode
+---
+# result of this service.
+bool result

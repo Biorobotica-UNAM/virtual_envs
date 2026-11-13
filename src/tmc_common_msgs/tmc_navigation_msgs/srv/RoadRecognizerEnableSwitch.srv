@@ -1,0 +1,8 @@
+# Summary(TODO)
+
+# true is On. false is Off.
+bool on
+
+---
+# result of this service.
+bool result

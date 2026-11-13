@@ -1,0 +1,5 @@
+moveit_msgs/RobotTrajectory[] robot_trajectories
+moveit_msgs/RobotState initial_state
+---
+moveit_msgs/RobotTrajectory robot_trajectory
+---

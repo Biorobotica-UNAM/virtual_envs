@@ -1,0 +1,17 @@
+<package format="3">
+  <name>tmc_utils_py</name>
+  <version>2.1.0</version>
+  <description>Utilities for topics and poses</description>
+  <maintainer email="xr-hsr-support@mail.toyota.co.jp">HSR Support</maintainer>
+  <license>BSD 3-clause Clear License</license>
+
+  <exec_depend>rcl_interfaces</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <test_depend>python3-nose</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

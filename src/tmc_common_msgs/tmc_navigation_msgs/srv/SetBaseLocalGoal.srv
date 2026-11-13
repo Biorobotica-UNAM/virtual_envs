@@ -1,0 +1,15 @@
+# Setting base goal service for base path planner.
+
+# The key of the node which published this service.
+string node_key
+
+# Setting base goal.
+geometry_msgs/Pose goal
+
+# Move direction of base.
+bool is_forward
+
+---
+
+# Result of this service.
+bool result

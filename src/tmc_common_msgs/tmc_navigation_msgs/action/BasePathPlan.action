@@ -1,0 +1,30 @@
+# goal
+geometry_msgs/PoseStamped goal
+---
+# result
+uint32 reason
+
+uint32 REACHED                     = 0 # action finished successfully
+uint32 CANCELED                    = 1 # action was canceled by cancel goal
+uint32 PREEMPTED                   = 2 # action was preempted by new goal
+uint32 ROBOT_IS_OUT_OF_MAP         = 3 # robot pose is out of the static map
+uint32 GOAL_IS_ON_STATIC_OBSTACLE  = 4 # specified goal is on static obstacle
+uint32 FOLLOWER_ABORTED            = 5 # path follow action was abroted by some reason
+uint32 ROBOT_POSE_IS_NOT_UPDATED   = 6 # gloal_pose has not been received for a long time
+uint32 DYNAMIC_MAP_IS_NOT_UPDATED  = 7 # dynamic_map has not been received for a long time
+uint32 SMOOTHING_FAIL              = 8 # smoothing path is failed
+uint32 TRANSFORM_GOAL_ERROR        = 9 # error occured by transform of goal pose
+---
+# feedback
+uint32 status # The status of the action
+
+uint32 RUNNING      = 0 # going on the planned path
+uint32 PLANNING     = 1 # stopping and retrying to plan path
+
+uint32 reason # reason when status is PLANNING
+
+uint32 NONE                         = 0
+uint32 PATH_PLANNING_FAIL           = 1 # Path planning failed because of some temporary reason
+uint32 ROBOT_IS_ON_STATIC_OBSTACLE  = 2 # robot pose is on static obstacle
+uint32 ROBOT_IS_ON_DYNAMIC_OBSTACLE = 3 # robot pose is on dynamic obstacle
+uint32 GOAL_IS_ON_DYNAMIC_OBSTACLE  = 4 # goal is on dynamic obstacle

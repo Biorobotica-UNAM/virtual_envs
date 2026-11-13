@@ -1,0 +1,7 @@
+# Selecting config service for impedance control
+
+# Config's name
+string name
+---
+# True: config is valid
+bool is_success

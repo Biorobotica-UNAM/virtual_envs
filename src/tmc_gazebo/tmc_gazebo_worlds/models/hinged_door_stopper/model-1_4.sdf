@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+<model name='hinged_door_stopper'>
+  <link name='door_frame'>
+    <pose>0 0 0 0 0 0</pose>
+    <visual name='stopper'>
+      <pose>0.0225 0.0175 1.025 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>0.01 0.035 2.050</size>
+        </box>
+      </geometry>
+      <material>
+        <!-- hsr_color/white -->
+        <name>white</name>
+        <ambient>1 1 1 1</ambient>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <emissive>0 0 0 1</emissive>
+        <shading>gouraud</shading>
+        <receive_shadows>on</receive_shadows>
+      </material>
+    </visual>
+    <collision name='collision_frame_1'>
+      <pose>0.0225 0.0175 1.025 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>0.01 0.035 2.050</size>
+        </box>
+      </geometry>
+      <max_contacts>10</max_contacts>
+      <surface/>
+    </collision>
+    <visual name='frame_2'>
+      <pose>-0.0225 0.0175 1.025 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>0.01 0.035 2.050</size>
+        </box>
+      </geometry>
+      <material>
+        <!-- hsr_color/white -->
+        <name>white</name>
+        <ambient>1 1 1 1</ambient>
+        <diffuse>0.5 0.5 0.5 1</diffuse>
+        <specular>0 0 0 1</specular>
+        <emissive>0 0 0 1</emissive>
+        <shading>gouraud</shading>
+        <receive_shadows>on</receive_shadows>
+      </material>
+    </visual>
+    <collision name='collision_frame_2'>
+      <pose>-0.0225 0.0175 1.025 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>0.01 0.035 2.050</size>
+        </box>
+      </geometry>
+      <max_contacts>10</max_contacts>
+      <surface/>
+    </collision>
+  </link>
+  <static>0</static>
+</model>
+</sdf>

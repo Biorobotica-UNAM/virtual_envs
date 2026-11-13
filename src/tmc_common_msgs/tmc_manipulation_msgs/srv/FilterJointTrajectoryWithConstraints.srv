@@ -1,0 +1,30 @@
+# Advanced filtering service for joint trajectory
+
+# A trajectory message that encodes joint limits, collision and state constraints within it.
+trajectory_msgs/JointTrajectory trajectory
+
+# Group name describing trajectory
+string group_name
+
+# A vector of JointLimit messages.
+# Each message contains the limits for a specific joint
+tmc_manipulation_msgs/JointLimits[] limits
+
+# Starting state updates. If certain joints should be considered
+# at positions other than the current ones, these positions should
+# be set here
+tmc_manipulation_msgs/RobotState start_state
+
+# A set of path constraints on the trajectory
+Constraints path_constraints
+
+# A set of goal constraints on the trajectory
+Constraints goal_constraints
+
+# Total allowed time for filtering
+duration allowed_time
+---
+# Filtered trajectory
+trajectory_msgs/JointTrajectory trajectory
+# Error code
+ArmNavigationErrorCodes error_code
