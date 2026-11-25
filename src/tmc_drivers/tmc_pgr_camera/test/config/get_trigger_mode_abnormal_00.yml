@@ -1,3 +1,0 @@
-parameter:
-  self_trigger: on
-  trigger_mode: { mode: 0, onOff: on }

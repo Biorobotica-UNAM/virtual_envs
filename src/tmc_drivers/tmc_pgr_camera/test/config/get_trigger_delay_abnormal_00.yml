@@ -1,2 +1,0 @@
-parameter:
-  trigger_delay: { test: true, absValue: 5.0, onOff: off }

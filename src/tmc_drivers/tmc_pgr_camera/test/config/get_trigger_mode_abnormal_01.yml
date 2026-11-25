@@ -1,2 +1,0 @@
-parameter:
-  trigger_mode: { test: on, mode: 0, onOff: on }
